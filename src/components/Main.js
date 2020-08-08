@@ -28,7 +28,7 @@ class Main extends Component {
               this.props.buyTokens(etherAmount)
             }}>
             <div>
-              <label className="float-left"><b>Input</b></label>
+              <label className="float-left mr-1"><b>Input</b></label>
                 <span className="floot-right text-muted">
                    Balance: {this.props.ehtBalance}
                 </span>
@@ -77,9 +77,9 @@ class Main extends Component {
             </div>
             <div className="mb-5">
               <span className="float-left text-muted">Exchange Rate</span>
-              <span className="float-right text-muted">1 ETH = 100 DApp</span>
+              <span className="float-right text-muted">1 ETH = 100 Wob</span>
             </div>
-            <button type="submit" className="btn btn-primary btn-block btn-lg">SWAP!</button>
+            <button type="submit" className="btn btn-info btn-block btn-lg">SWAP!</button>
           </form>
 
           </div>
