@@ -1,1 +1,6 @@
 /* Styles go here */
+#account {
+  font-size: 15px;
+  margin-right: 10px;
+  color: gray
+}
