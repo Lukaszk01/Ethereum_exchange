@@ -79,7 +79,7 @@ class Main extends Component {
               <span className="float-left text-muted">Exchange Rate</span>
               <span className="float-right text-muted">1 ETH = 100 Wob</span>
             </div>
-            <button type="submit" className="btn btn-info btn-block btn-lg">SWAP!</button>
+            <button type="submit" className="btn btn-info btn-block btn-lg">EXCHANGE!!</button>
           </form>
 
           </div>

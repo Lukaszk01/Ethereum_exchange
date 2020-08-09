@@ -4,3 +4,26 @@
   margin-right: 10px;
   color: gray
 }
+
+.btn, .btn-info, .btn-block, .btn-lg {
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 1px 1px 3px gray;
+}
+
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  border-radius: 25px;
+  box-shadow: 1px 1px 3px gray;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card-body {
+  box-shadow: 1px 1px 5px gray;
+}
