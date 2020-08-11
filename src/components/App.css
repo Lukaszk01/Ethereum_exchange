@@ -23,7 +23,18 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-
 .card-body {
   box-shadow: 1px 1px 5px gray;
+  transition: 1s;
+}
+.card-body:hover {
+  background-color: #efefef;
+  transition: 1s;
+}
+
+#account:hover {
+  color: white;
+  font-size:20px;
+  text-shadow: 1px 1px 1px gray;
+  transition: 0.9s;
 }
