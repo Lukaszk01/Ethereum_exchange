@@ -24,7 +24,7 @@ class BuyForm extends Component {
               <div>
                 <label className="float-left mr-1"><b>Input</b></label>
                   <span className="floot-right text-muted">
-                     Balance: {this.props.ehtBalance}
+                    <strong>Balance:</strong>  {this.props.ehtBalance}
                   </span>
               </div>
               <div className="input-group mb-4">
