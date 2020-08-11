@@ -20,7 +20,7 @@ class Main extends Component {
 
           <div className="card-body">
 
-          <form className="mb-3" onSubmit={(event) => {
+            <form className="mb-3" onSubmit={(event) => {
               event.preventDefault()
               let etherAmount
               etherAmount = this.input.value.toString()
