@@ -64,6 +64,13 @@ class App extends Component {
 
   }
 
+buyTokens = (etherAmount) => {
+    this.setState({ loading: true })
+    this.state.ethSwap.methods.buyTokens().send({ value: etherAmount, from: this.state.account }).on('transactionHash', (hash) => {
+      this.setState({ loading: false })
+    })
+  }
+
    constructor(props) {
     super(props)
     this.state = {
@@ -84,7 +91,9 @@ class App extends Component {
     else {
       content = <Main
         ehtBalance={this.state.ehtBalance}
-        tokenBalance={this.state.tokenBalance}/>
+        tokenBalance={this.state.tokenBalance}
+        buyTokens={this.buyTokens}
+        />
     }
 
     return (
