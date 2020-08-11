@@ -71,6 +71,15 @@ buyTokens = (etherAmount) => {
     })
   }
 
+  sellTokens = (tokenAmount) => {
+    this.setState({ loading: true })
+    this.state.token.methods.approved(this.state.ehtSwap.address, tokenAmount).send({ from: this.state.account }).on('transactionHash', (hash) => {
+    this.state.ehtSwap.methods.sellTokens(tokenAmount).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.setState({ loading: false })
+      })
+    })
+  }
+
    constructor(props) {
     super(props)
     this.state = {
@@ -93,6 +102,7 @@ buyTokens = (etherAmount) => {
         ehtBalance={this.state.ehtBalance}
         tokenBalance={this.state.tokenBalance}
         buyTokens={this.buyTokens}
+        sellTokens={this.sellTokens}
         />
     }
 
