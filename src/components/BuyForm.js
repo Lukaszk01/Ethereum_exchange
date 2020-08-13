@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import tokenLogo from '../logoC.png'
-import ethLogo from '../logo.png'
+import ethLogo from '../Ethereum_logo_2014.svg.png'
 
 class BuyForm extends Component {
   constructor(props) {
@@ -62,15 +62,15 @@ class BuyForm extends Component {
           <div className="input-group-append">
             <div className="input-group-text">
               <img src={tokenLogo} height='32' alt=""/>
-              &nbsp; DApp
+              &nbsp; WomB
             </div>
           </div>
         </div>
         <div className="mb-5">
           <span className="float-left text-muted">Exchange Rate</span>
-          <span className="float-right text-muted">1 ETH = 100 DApp</span>
+          <span className="float-right text-muted">1 ETH = 100 WomB</span>
         </div>
-        <button type="submit" className="btn btn-primary btn-block btn-lg">SWAP!</button>
+        <button type="submit" className="btn btn-danger btn-block btn-lg">Exchange!</button>
       </form>
     );
   }
