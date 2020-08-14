@@ -1,3 +1,6 @@
+"scripts": {
+    "start": "node server.js"
+}
 {
   "name": "eth-marketplace",
   "version": "0.1.0",
